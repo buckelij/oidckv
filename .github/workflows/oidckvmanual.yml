@@ -49,7 +49,7 @@
 #    subject claim - repository_owner:ideasyncratic:job_workflow_ref:ideasyncratic/oidckv/.github/workflows/oidckv.yml@refs/heads/main
 # 
 
-name: Login with OIDC, fetch a key vault secret, echo the MD5
+name: manual Login with OIDC, fetch a key vault secret, echo
 
 on:
   workflow_call:
