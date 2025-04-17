@@ -52,7 +52,7 @@
 name: manual Login with OIDC, fetch a key vault secret, echo
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   echoMd5:
