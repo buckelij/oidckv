@@ -52,7 +52,7 @@
 name: Login with OIDC, fetch a key vault secret, echo the MD5
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 env:
   AZURE_CLIENT_ID: "9d04cac8-55ab-49e7-88c0-785e0f34f9c0"
