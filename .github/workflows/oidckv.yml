@@ -71,7 +71,7 @@ jobs:
         client-id: ${{ env.AZURE_CLIENT_ID }}
         tenant-id: ${{ env.AZURE_TENANT_ID }}
         subscription-id: ${{ env.AZURE_SUBSCRIPTION_ID }}
-    - name: Get api-key secret
+    - name: Set api-key secret
       run: |
         az keyvault secret show --name set-key --vault-name oidc-kv1 --query value --output tsv
     - name: Get api-key secret
