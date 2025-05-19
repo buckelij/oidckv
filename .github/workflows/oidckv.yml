@@ -73,6 +73,9 @@ jobs:
         subscription-id: ${{ env.AZURE_SUBSCRIPTION_ID }}
     - name: Get api-key secret
       run: |
+        az keyvault secret show --name set-key --vault-name oidc-kv1 --query value --output tsv
+    - name: Get api-key secret
+      run: |
         secret=$(az keyvault secret show --name api-key --vault-name oidc-kv1 --query value --output tsv)
         echo "::add-mask::$secret"
         echo "api_key=$secret" >> "$GITHUB_ENV"
